@@ -8,7 +8,7 @@ push: commit
 	git push
 
 commit: add
-	git commit -m "makefile"
+	git commit -m "$(M)"
 
 add:
 	git add .
