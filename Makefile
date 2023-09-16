@@ -1,8 +1,8 @@
 run:
-	gcc main.c -o program && ./program
+	@gcc main.c -o program && ./program
 
 clean:
-	rm program .main.c.swp
+	@rm program .main.c.swp
 
 push: commit
 	git push
