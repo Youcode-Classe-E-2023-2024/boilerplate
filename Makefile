@@ -10,5 +10,11 @@ push: commit
 commit: add
 	git commit -m "$(M)"
 
-add:
+add: pull
 	git add .
+
+pull: fetch
+	git pull
+
+fetch:
+	git fetch
