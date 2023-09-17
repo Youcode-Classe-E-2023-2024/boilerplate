@@ -1,20 +1,17 @@
-run: main
+run: compile
 	@./main
 
-main: main.o sort.o util.o
-	@gcc -o main main.o sort.o util.o
+compile: main
+	@gcc -o main *.o
 
-main.o: main.c main.h
+main: library
 	@gcc -c -g main.c main.h
 
-sort.o: lib/sort.c lib/sort.h
-	@gcc -c -g lib/sort.c
-
-util.o: lib/util.c lib/util.h
-	@gcc -c -g lib/util.c
+library:
+	@gcc -c -g lib/*.c lib/*.h
 
 clean:
-	@rm main .main.c.swp main.h.gch main.o util.o sort.o
+	@rm main .*.c.swp *.h.gch *.o
 
 push: commit
 	git push
