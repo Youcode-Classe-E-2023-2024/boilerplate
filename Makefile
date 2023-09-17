@@ -11,7 +11,7 @@ library:
 	@gcc -c -g lib/*.c lib/*.h
 
 clean:
-	@rm main .*.c.swp *.h.gch *.o
+	@rm main .*.swp .*/*.swp *.h.gch */*h.gch *.o
 
 push: commit
 	git push

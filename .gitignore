@@ -1,2 +1,4 @@
 program
-.main.c.swp
+.*.swp
+*.h.gch
+*.o
