@@ -3,5 +3,6 @@
 #include <unistd.h>
 #include <math.h>
 
+#include "lib/search.h"
 #include "lib/sort.h"
 #include "lib/util.h"
