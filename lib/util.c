@@ -1,7 +1,7 @@
 #include "util.h"
 
-void debug_arr_int(int *arr) {
-    for (int i = 0; i < sizeof(arr); i++) {
+void debug_arr_int(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n");
